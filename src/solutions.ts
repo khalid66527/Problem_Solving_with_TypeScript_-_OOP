@@ -2,6 +2,28 @@
 
 
 
+
+// Problem 2:
+function processInput(value: number | string | boolean): string | number | boolean {
+
+    if( typeof  value === "string"){
+        return value.trim().toLowerCase();
+    }
+    else if ( typeof value === "number") {
+        return value * 10;
+    }
+ 
+    else{
+        return value ? "Active" : "Inactive"
+    }
+
+
+
+}
+
+
+
+
 // Problem 1:
 function multiplyValue(value: number, multiplier?: number): number {
     if (multiplier === undefined) {
