@@ -1,4 +1,9 @@
 "use strict";
+// Problem 3:
+function formatCoordinate(coordinate) {
+    const [latitude, longitude, locationName] = coordinate;
+    return `Location:  ${locationName} (${latitude} , ${longitude})`;
+}
 // Problem 2:
 function processInput(value) {
     if (typeof value === "string") {
