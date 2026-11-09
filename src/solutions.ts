@@ -1,6 +1,14 @@
 
 
-// Problem 3:
+
+function concatenateArrays<T> (...arrays: T[][]) : T[]{
+    return  arrays.flat()
+  }
+
+
+
+
+
 function formatCoordinate (
     coordinate : readonly [number, number, string]
 ): string {
@@ -12,7 +20,7 @@ function formatCoordinate (
 
 
 
-// Problem 2:
+
 function processInput(value: number | string | boolean): string | number | boolean {
 
     if( typeof  value === "string"){
@@ -33,7 +41,7 @@ function processInput(value: number | string | boolean): string | number | boole
 
 
 
-// Problem 1:
+
 function multiplyValue(value: number, multiplier?: number): number {
     if (multiplier === undefined) {
         return value * 2;

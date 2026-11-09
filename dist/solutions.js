@@ -1,10 +1,11 @@
 "use strict";
-// Problem 3:
+function concatenateArrays(...arrays) {
+    return arrays.flat();
+}
 function formatCoordinate(coordinate) {
     const [latitude, longitude, locationName] = coordinate;
     return `Location:  ${locationName} (${latitude} , ${longitude})`;
 }
-// Problem 2:
 function processInput(value) {
     if (typeof value === "string") {
         return value.trim().toLowerCase();
@@ -16,7 +17,6 @@ function processInput(value) {
         return value ? "Active" : "Inactive";
     }
 }
-// Problem 1:
 function multiplyValue(value, multiplier) {
     if (multiplier === undefined) {
         return value * 2;
